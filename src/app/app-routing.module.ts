@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { BoardComponent } from './board/board.component';
-import { LoginComponent } from './login/login.component';
 import { RegComponent } from './reg/reg.component';
+import { SiginComponent } from './sigin/sigin.component';
 import { WeluserComponent } from './weluser/weluser.component';
 
 const routes: Routes = [
@@ -23,10 +23,7 @@ const routes: Routes = [
     path: 'verify-email',
     loadChildren: () => import('./verify-email/verify-email.module').then( m => m.VerifyEmailPageModule)
   },
-  {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },
+  
   {
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
@@ -36,9 +33,10 @@ const routes: Routes = [
     loadChildren: () => import('./password-reset/password-reset.module').then( m => m.PasswordResetPageModule)
   },
   {path:'reg', component:RegComponent},
-  {path: 'login', component:LoginComponent},
+  
   {path: 'weluser',component:WeluserComponent},
   {path: 'board',component:BoardComponent},
+  {path: 'sigin',component:SiginComponent}
 ];
 
 @NgModule({
