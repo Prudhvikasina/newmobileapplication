@@ -13,6 +13,8 @@ import {
 })
 export class AuthenticationService {
   userData: any;
+  signIn: any;
+  authState: any;
 
   constructor(
     public afStore: AngularFirestore,

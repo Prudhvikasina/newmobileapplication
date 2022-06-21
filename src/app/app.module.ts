@@ -18,8 +18,13 @@ import { LoginComponent } from './login/login.component';
 import { WeluserComponent } from './weluser/weluser.component';
 import { BoardComponent } from './board/board.component';
 
+
+
+
+
+
 @NgModule({
-  declarations: [AppComponent,RegComponent,LoginComponent,WeluserComponent,BoardComponent],
+  declarations: [AppComponent,RegComponent,LoginComponent,WeluserComponent,BoardComponent,],
   entryComponents: [],
   imports: [
     BrowserModule,
@@ -30,9 +35,11 @@ import { BoardComponent } from './board/board.component';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
-  
+    
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+

@@ -1,4 +1,4 @@
-package io.ionic.people.task.list;
+package io.ionic.io.ionic.people.task.list;
 
 import com.getcapacitor.BridgeActivity;
 

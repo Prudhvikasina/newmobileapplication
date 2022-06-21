@@ -3,12 +3,12 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title class="text-center">Sign in User</ion-title>
+    <ion-title class="sign text-center">Sign in User</ion-title>
   </ion-toolbar>
 </ion-header>
 
 
-<ion-content>
+<ion-content class="background">
   <ion-item class="email" lines="full">
     <ion-label position="floating">Email</ion-label>
     <ion-input type="text" #email required></ion-input>
@@ -38,6 +38,11 @@
       <ion-button class="google" type="submit" color="danger" (click)="authService.GoogleAuth()" expand="block">
         Login with Google
       </ion-button>
+
+      <!-- <button class="btn btn-social-icon btn-facebook mx-1" (click)="signInWithFB()"><span class="fab fa-facebook"></span></button> -->
+      
+      
+
     </ion-col>
   </ion-row>
 </ion-content>
